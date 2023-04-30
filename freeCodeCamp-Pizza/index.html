@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Welcome to PizzaWow</h1>
+    <p id="description">Order your pizza</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Full Name: <input id="name" name="name" type="text" placeholder="Please Name" required /></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Please e-mail" required /></label>
+        <label id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="Age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">What pizza do you like?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Cheese</option>
+            <option value="2">Peperoni</option>
+            <option value="3">Mexican</option>
+            <option value="4">Vegetables</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal" /> Pay Cash</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Pay Credit Card</label>
+      </fieldset>
+      <fieldset>
+        <label id="conditions">
+          <input id="conditions" type="checkbox" required name="conditions" class="inline" value="condition"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+          <label><input id="humans" type="checkbox" required name="humans" class="inline" value="human"/> I'm Human
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="bio">
+Additional: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Write please"></textarea>
+        </label>
+      </fieldset> 
+      <input id="submit" type="submit" value="Submit" />     
+    </form> 
+  </body>
+</html>
